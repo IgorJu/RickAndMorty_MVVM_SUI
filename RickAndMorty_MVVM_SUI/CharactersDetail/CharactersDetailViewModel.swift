@@ -8,6 +8,9 @@
 import SwiftUI
 
 class CharacterDetailsViewModel: ObservableObject {
+    
+    private let character: Personage
+    
     var name: String {
         character.name
     }
@@ -23,20 +26,17 @@ class CharacterDetailsViewModel: ObservableObject {
         character.status
     }
     
-    var imageData: Data {
-        var imageData = Data()
-        
-        do {
-            imageData = try NetworkManager.shared.fetchImageData(from: character.image.formatted())
-        } catch {
-            print(error)
-        }
-        return imageData
+    var imageURL: URL {
+        character.image
     }
-    
-    private let character: Personage
     
     init(character: Personage) {
         self.character = character
     }
 }
+            
+
+
+
+
+

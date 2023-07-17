@@ -12,15 +12,20 @@ struct RowView: View {
     
     var body: some View {
         HStack {
-            Image(uiImage: UIImage(data: viewModel.imageData ?? Data()) ?? UIImage())
-                              .resizable()
-                              .frame(width: 80, height: 80)
-                              .cornerRadius(40)
-                      }
+            AsyncImage(url: viewModel.imageURL) { image in
+                image
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .cornerRadius(100)
+            } placeholder: {
+                Image(systemName: "xmark.seal.fill")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+            }
             Text(viewModel.name)
         }
     }
-
+}
 
 //struct RowView_Previews: PreviewProvider {
 //    static var previews: some View {

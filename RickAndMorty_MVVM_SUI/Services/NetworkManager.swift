@@ -5,7 +5,7 @@
 //  Created by Igor on 14.07.2023.
 //
 
-import Foundation
+import SwiftUI
 
 enum API: String {
     case personageURL = "https://rickandmortyapi.com/api/character"
@@ -22,14 +22,7 @@ final class NetworkManager {
     
     private init () {}
     
-    //MARK: - Fetch Methods
-    func fetchImageData(from url: String) throws -> Data {
-        guard let imageURL = URL(string: url) else { throw NetworkError.invalidURL }
-        guard let imageData = try? Data(contentsOf: imageURL) else { throw NetworkError.noData }
-        return imageData
-    }
-    
-    
+    //MARK: - Fetch Methods    
     func fetchCharacters() async throws -> [Personage] {
         guard let url = URL(string: API.personageURL.rawValue) else {
             throw NetworkError.invalidURL

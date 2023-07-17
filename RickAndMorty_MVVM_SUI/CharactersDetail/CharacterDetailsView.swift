@@ -19,11 +19,16 @@ struct CharacterDetailsView: View {
                 Text(viewModel.name)
                     .bold()
                     .font(.largeTitle)
-                Image(uiImage: UIImage(data: viewModel.imageData ?? Data()) ?? UIImage())
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .cornerRadius(100)
-                
+                AsyncImage(url: viewModel.imageURL) { image in
+                    image
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .cornerRadius(100)
+                } placeholder: {
+                    Image(systemName: "xmark.seal.fill")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                }
                 Text("Status: \(viewModel.status)")
                 Text("Gender: \(viewModel.gender)")
                 Text("Species: \(viewModel.species)")

@@ -12,7 +12,6 @@ struct RickAndMorty_MVVM_SUIApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-            //CharacterListView()
         }
     }
 }

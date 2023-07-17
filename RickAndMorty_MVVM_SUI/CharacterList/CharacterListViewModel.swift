@@ -13,7 +13,7 @@ class CharacterListViewModel: ObservableObject {
     func fetchCharacters() async {
         do {
             let characters = try await NetworkManager.shared.fetchCharacters()
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.rows = characters.map { CharacterDetailsViewModel(character: $0) }
             }
         } catch {
