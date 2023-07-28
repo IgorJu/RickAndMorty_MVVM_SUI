@@ -12,16 +12,13 @@
 
 Для перехода к детальной информации испольузуются NavigationView, NavigationLink
 
-<img width="250" alt="Снимок экрана 2023-07-14 в 19 49 11" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/4b23018c-1900-4771-ac0d-06ea72fa95f1">
-<img width="250" alt="Снимок экрана 2023-07-14 в 19 49 22" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/3490a7a6-f147-414d-9d9d-b94c099c289b">
-<img width="250" alt="Снимок экрана 2023-07-14 в 19 49 34" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/4d6a2bd1-343d-49b4-8c27-544653719693">
+
+<img width="300" alt="Снимок экрана 2023-07-28 в 18 07 56" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/795b6f26-c420-4a0c-a658-508d757eca05">
+
+<img width="300" alt="Снимок экрана 2023-07-28 в 18 08 02" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/1994052b-8c26-448c-8972-e7a93a9f5e73">
 
 
-
-
-
-
-
+<img width="300" alt="Снимок экрана 2023-07-28 в 18 08 07" src="https://github.com/IgorJu/RickAndMorty_MVVM_SUI/assets/127942402/6a13462a-5c82-4157-a5f5-a28bf1a4ca80">
 
 
 
